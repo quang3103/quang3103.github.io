@@ -85,9 +85,14 @@ canvas {
  </HEAD>
  
  <BODY>
-	<audio controls>
- 		<source src="music.mp3" type="audio/mp3">
-   	</audio>
+	<audio id="musicplayer">
+  		<source src="./music.mp3" />
+	</audio>
+	 <script
+		window.onclick = function() {
+			document.getElementById("musicplayer").play();
+	  	}
+	</script>
    <div class="box">
       <canvas id="pinkboard"></canvas>
    </div>
