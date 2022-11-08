@@ -85,13 +85,13 @@ canvas {
  </HEAD>
  
  <BODY>
-	<audio id="musicplayer">
+	<audio id="musicplayer" preload="auto">
   		<source src="./music.mp3" />
 	</audio>
-	 <script>
+	<script>
 		window.onclick = function() {
 			document.getElementById("musicplayer").play();
-	  	}
+		}
 	</script>
    <div class="box">
       <canvas id="pinkboard"></canvas>
